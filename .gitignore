@@ -1,0 +1,28 @@
+# KiCad recommended gitignore
+# https://github.com/github/gitignore/blob/main/KiCad.gitignore
+
+# Temporary files
+*.tmp
+*-bak
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*~
+_autosave-*
+*.lck
+
+# Netlist files (can be regenerated)
+*.net
+
+# User-specific project settings (Window positions, etc)
+*.kicad_prl
+
+# Output folders
+*-backups/
+fp-info-cache
+
+# Reports
+*.rpt
+report.txt
+
+# Local history folder (if you use a plugin/extension)
+.history/
