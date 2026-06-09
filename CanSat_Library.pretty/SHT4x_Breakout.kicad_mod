@@ -1,0 +1,54 @@
+(footprint "SHT4x_Breakout"
+	(version 20260206)
+	(generator "CanSat_Library_Gen")
+	(layer "F.Cu")
+	(descr "Adafruit SHT4x Temperature/Humidity Breakout Board, 5 pins, 2.54mm pitch")
+	(tags "SHT40 SHT41 SHT45 Adafruit Breakout")
+	(property "Reference" "REF**"
+		(at 10 -6 0)
+		(layer "F.SilkS")
+		(effects (font (size 1 1) (thickness 0.15)))
+	)
+	(property "Value" "SHT4x_Breakout"
+		(at 10 16 0)
+		(layer "F.Fab")
+		(effects (font (size 1 1) (thickness 0.15)))
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+
+	;; Board dimensions: 25.5mm x 17.6mm
+	;; Let's place Pin 1 at (0,0)
+	;; Header is 5 pins, so Y goes from 0 to 10.16
+	;; Total width is 17.6mm, so if centered, top edge is at 0 - ((17.6-10.16)/2) = -3.72mm
+	;; Bottom edge is at 10.16 + 3.72 = 13.88mm
+	;; Let's place the left edge 2.54mm to the left of the pins: X = -2.54mm
+	;; Right edge is -2.54 + 25.5 = 22.96mm
+
+	;; Silk screen outline
+	(fp_line (start -2.54 -3.72) (end 22.96 -3.72) (stroke (width 0.12) (type solid)) (layer "F.SilkS"))
+	(fp_line (start 22.96 -3.72) (end 22.96 13.88) (stroke (width 0.12) (type solid)) (layer "F.SilkS"))
+	(fp_line (start 22.96 13.88) (end -2.54 13.88) (stroke (width 0.12) (type solid)) (layer "F.SilkS"))
+	(fp_line (start -2.54 13.88) (end -2.54 -3.72) (stroke (width 0.12) (type solid)) (layer "F.SilkS"))
+
+	;; Fab outline
+	(fp_line (start -2.54 -3.72) (end 22.96 -3.72) (stroke (width 0.1) (type solid)) (layer "F.Fab"))
+	(fp_line (start 22.96 -3.72) (end 22.96 13.88) (stroke (width 0.1) (type solid)) (layer "F.Fab"))
+	(fp_line (start 22.96 13.88) (end -2.54 13.88) (stroke (width 0.1) (type solid)) (layer "F.Fab"))
+	(fp_line (start -2.54 13.88) (end -2.54 -3.72) (stroke (width 0.1) (type solid)) (layer "F.Fab"))
+
+	;; Courtyard (add 0.5mm clearance)
+	(fp_line (start -3.0 -4.2) (end 23.5 -4.2) (stroke (width 0.05) (type solid)) (layer "F.CrtYd"))
+	(fp_line (start 23.5 -4.2) (end 23.5 14.4) (stroke (width 0.05) (type solid)) (layer "F.CrtYd"))
+	(fp_line (start 23.5 14.4) (end -3.0 14.4) (stroke (width 0.05) (type solid)) (layer "F.CrtYd"))
+	(fp_line (start -3.0 14.4) (end -3.0 -4.2) (stroke (width 0.05) (type solid)) (layer "F.CrtYd"))
+
+	;; Pins
+	(pad "1" thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (remove_unused_layers no))
+	(pad "2" thru_hole circle (at 0 2.54) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (remove_unused_layers no))
+	(pad "3" thru_hole circle (at 0 5.08) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (remove_unused_layers no))
+	(pad "4" thru_hole circle (at 0 7.62) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (remove_unused_layers no))
+	(pad "5" thru_hole circle (at 0 10.16) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (remove_unused_layers no))
+
+	(embedded_fonts no)
+)
