@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "CanSat_Library") (type "KiCad") (uri "${KIPRJMOD}/CanSat_Library.pretty") (options "") (descr "CanSat custom breakout footprints"))
+)
