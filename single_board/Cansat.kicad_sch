@@ -7949,16 +7949,6 @@
 		)
 		(uuid "ff8dafb2-4af8-4d90-a542-ebd9ff598ba2")
 	)
-	(label "OUT+"
-		(at 167.64 22.86 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "04dfd905-fda7-483d-baff-b608e16ac960")
-	)
 	(label "3V3"
 		(at 224.79 85.09 0)
 		(effects
@@ -8139,16 +8129,6 @@
 		)
 		(uuid "31bc6786-d5ee-4a46-bfa9-b1cf38a56d32")
 	)
-	(label "GND_SIG"
-		(at 204.47 57.15 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "35f0414e-9eda-4583-9336-5a666ed03d44")
-	)
 	(label "3V3"
 		(at 115.57 87.63 0)
 		(effects
@@ -8299,16 +8279,6 @@
 		)
 		(uuid "52273fe4-068b-4056-9451-2b9b926e150a")
 	)
-	(label "IN-"
-		(at 167.64 20.32 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "53204229-323b-4e0f-84c3-2aa494966c80")
-	)
 	(label "3V3"
 		(at 262.89 86.36 0)
 		(effects
@@ -8328,16 +8298,6 @@
 			(justify left bottom)
 		)
 		(uuid "55da9522-70fa-4d4f-b106-aa916b52c47c")
-	)
-	(label "BAT-"
-		(at 204.47 52.07 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "592fcef6-a6f0-4385-b332-79ec4c2ae82a")
 	)
 	(label "3V3"
 		(at 24.13 113.03 0)
@@ -8848,16 +8808,6 @@
 			(justify left bottom)
 		)
 		(uuid "e58775a8-8152-4936-a7a8-8f92eafa8b1e")
-	)
-	(label "OUT-"
-		(at 167.64 25.4 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e5b26aa4-190f-4050-9145-012ad0436da8")
 	)
 	(label "SD_D2"
 		(at 92.71 139.7 0)
